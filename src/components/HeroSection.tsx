@@ -24,6 +24,7 @@ export default function HeroSection() {
       <div className="h-dvh overflow-hidden bg-black">
         <div className="relative flex h-full w-full items-end justify-end">
           <img
+            fetchPriority="high"
             src={myPhoto}
             alt="Ahmed Mamdoh"
             className="max-h-[85vh] min-w-fit translate-x-[30%] sm:max-h-[90vh] sm:translate-x-[10%]"
