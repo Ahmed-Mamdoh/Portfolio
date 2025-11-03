@@ -1,4 +1,4 @@
-import myPhoto from "../assets/myPhoto4.png";
+import myPhoto from "../assets/myPhoto8.png";
 import github from "../assets/Github.png";
 import linkedin from "../assets/LinkedIn.png";
 import githubWhite from "../assets/Github-White.png";

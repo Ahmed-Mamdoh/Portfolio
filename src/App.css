@@ -9,3 +9,7 @@
   --font-family-secondary: "Montserrat", sans-serif;
   --font-family-tertiary: "Open Sans", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}

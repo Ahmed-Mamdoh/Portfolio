@@ -4,7 +4,7 @@ export default function NavBar() {
       <ul className="flex flex-col items-end gap-3 pr-3 lg:flex-row lg:gap-x-7">
         <li>
           <a
-            href="#aboutMe"
+            href="#about-me"
             className="font-family-secondary text-lg font-bold text-nowrap text-white md:text-base lg:text-lg"
           >
             About me
