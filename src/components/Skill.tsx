@@ -5,11 +5,11 @@ type SkillProps = {
 };
 export default function Skill({ skillIcon, skillName, className }: SkillProps) {
   return (
-    <div className="flex w-44 flex-col items-center gap-y-4">
+    <div className="flex w-36 flex-col items-center gap-y-4 md:w-44">
       <div className="flex h-24 w-24 items-end justify-center">
         <img src={skillIcon} alt="" className={`w-24 ${className}`} />
       </div>
-      <p className="font-family-secondary text-2xl">{skillName}</p>
+      <p className="font-family-secondary text-lg md:text-2xl">{skillName}</p>
     </div>
   );
 }

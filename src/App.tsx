@@ -2,6 +2,7 @@ import "./App.css";
 import HeroSection from "./components/HeroSection";
 import AboutMeSection from "./components/AboutMeSection";
 import SkillsSection from "./components/SkillsSection";
+import PortfolioSection from "./components/PortfolioSection";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <AboutMeSection />
           <SkillsSection />
         </div>
+        <PortfolioSection />
       </div>
     </>
   );

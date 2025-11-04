@@ -26,7 +26,7 @@ export default function SkillsSection() {
       <div className="mx-auto flex flex-col gap-y-24 px-12 xl:w-8/12">
         <div className="flex flex-col gap-y-12">
           <p className="font-family-secondary text-3xl font-bold">USING NOW:</p>
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-16">
+          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-16 md:gap-x-10">
             <Skill skillIcon={htmlIcon} skillName="HTML" />
             <Skill skillIcon={cssIcon} skillName="CSS" />
             <Skill skillIcon={jsIcon} skillName="JavaScript" />
@@ -54,7 +54,7 @@ export default function SkillsSection() {
           <p className="font-family-secondary text-3xl font-bold">
             OTHER SKILLS:
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-16">
+          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-16 md:gap-x-10">
             <Skill
               skillIcon={egyptIcon}
               className="h-24 w-24 rounded-full"

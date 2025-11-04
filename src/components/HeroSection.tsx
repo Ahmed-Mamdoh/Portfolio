@@ -1,8 +1,8 @@
 import myPhoto from "../assets/myPhoto8.png";
 import github from "../assets/Github.png";
 import linkedin from "../assets/LinkedIn.png";
-import githubWhite from "../assets/Github-White.png";
-import linkedinWhite from "../assets/LinkedIn-White.png";
+import githubWhite from "../assets/Github-White.svg";
+import linkedinWhite from "../assets/LinkedIn-White.svg";
 import NavBar from "./NavBar";
 import { useEffect, useState } from "react";
 
@@ -44,8 +44,8 @@ export default function HeroSection() {
               </p>
             </div>
             <div className="flex flex-col items-center gap-y-7">
-              <img src={githubWhite} alt="" />
-              <img src={linkedinWhite} alt="" />
+              <img src={githubWhite} className="w-12" alt="" />
+              <img src={linkedinWhite} className="w-12" alt="" />
             </div>
           </div>
         </div>
