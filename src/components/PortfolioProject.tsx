@@ -21,6 +21,7 @@ export default function PortfolioProject({
         className="block h-full w-full cursor-pointer"
         href={href}
         target="_blank"
+        aria-label={`View project ${projectName}`}
       >
         <figure className="hover-gallery h-full w-full transition-all duration-300">
           {src.map((item, index) => (
@@ -31,9 +32,9 @@ export default function PortfolioProject({
 
       <div className="absolute right-0 bottom-0 left-0 flex h-1/3 flex-col gap-y-2 bg-black/50 px-12 py-3 transition-all duration-300 group-hover:translate-y-0 md:translate-y-full">
         <div>
-          <h3 className="text-xl font-semibold text-white md:text-2xl">
+          <h2 className="text-xl font-semibold text-white md:text-2xl">
             {projectName}
-          </h3>
+          </h2>
           <p className="hidden text-sm text-white md:inline-block">
             {projectDescription}
           </p>

@@ -90,6 +90,7 @@ export default function HeroSection() {
         <NavBar />
         <img
           src={myPhoto}
+          fetchPriority="high"
           alt="Ahmed Mamdoh Photo"
           className="w-330 lg:w-150"
         />
