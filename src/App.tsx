@@ -3,6 +3,9 @@ import HeroSection from "./components/HeroSection";
 import AboutMeSection from "./components/AboutMeSection";
 import SkillsSection from "./components/SkillsSection";
 import PortfolioSection from "./components/PortfolioSection";
+import ContactMeSection from "./components/ContactMeSection";
+import Footer from "./components/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -14,7 +17,12 @@ function App() {
           <SkillsSection />
         </div>
         <PortfolioSection />
+        <div className="container mx-auto">
+          <ContactMeSection />
+          <Footer />
+        </div>
       </div>
+      <Toaster />
     </>
   );
 }

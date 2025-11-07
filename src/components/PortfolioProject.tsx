@@ -29,7 +29,7 @@ export default function PortfolioProject({
         </figure>
       </a>
 
-      <div className="absolute right-0 bottom-0 left-0 flex h-1/3 flex-col gap-y-4 bg-black/50 px-12 py-3 transition-all duration-300 group-hover:translate-y-0 md:translate-y-full">
+      <div className="absolute right-0 bottom-0 left-0 flex h-1/3 flex-col gap-y-2 bg-black/50 px-12 py-3 transition-all duration-300 group-hover:translate-y-0 md:translate-y-full">
         <div>
           <h3 className="text-xl font-semibold text-white md:text-2xl">
             {projectName}

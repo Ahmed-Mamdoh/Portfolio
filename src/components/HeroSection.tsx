@@ -21,13 +21,13 @@ export default function HeroSection() {
 
   if (isSmallScreen)
     return (
-      <div className="h-dvh overflow-hidden bg-black">
+      <div id="hero" className="h-dvh overflow-hidden bg-black">
         <div className="relative flex h-full w-full items-end justify-end">
           <img
             fetchPriority="high"
             src={myPhoto}
             alt="Ahmed Mamdoh"
-            className="max-h-[85vh] min-w-fit translate-x-[30%] sm:max-h-[90vh] sm:translate-x-[10%]"
+            className="max-h-[75vh] min-w-fit translate-x-[30%] [@media(min-width:450px)]:max-h-[80vh] [@media(min-width:450px)]:translate-x-[10%]"
           />
         </div>
         <div className="absolute top-0 right-0 z-10 flex h-full w-full items-end bg-linear-170 from-transparent from-70% to-black/56 to-70% px-8 pb-11">
@@ -36,7 +36,7 @@ export default function HeroSection() {
               <p className="font-family-hero text-xl font-bold text-white">
                 Hi, I am
               </p>
-              <h1 className="font-family-hero text-4xl font-bold text-white [@media(max-width:300px)]:text-xl [@media(max-width:400px)]:text-2xl">
+              <h1 className="font-family-hero text-4xl font-bold text-white [@media(max-width:325px)]:text-xl [@media(max-width:425px)]:text-2xl">
                 Ahmed Mamdoh
               </h1>
               <p className="font-family-hero text-sm font-bold text-white">
@@ -44,8 +44,8 @@ export default function HeroSection() {
               </p>
             </div>
             <div className="flex flex-col items-center gap-y-7">
-              <img src={githubWhite} className="w-12" alt="" />
-              <img src={linkedinWhite} className="w-12" alt="" />
+              <img src={githubWhite} className="w-9 sm:w-12" alt="" />
+              <img src={linkedinWhite} className="w-9 sm:w-12" alt="" />
             </div>
           </div>
         </div>
@@ -53,7 +53,10 @@ export default function HeroSection() {
     );
 
   return (
-    <div className="flex h-screen items-center justify-center bg-linear-100 from-primary from-50% to-black to-50%">
+    <div
+      id="hero"
+      className="flex h-screen items-center justify-center bg-linear-100 from-primary from-50% to-black to-50%"
+    >
       <div className="flex w-full justify-between pl-10 lg:pl-15 2xl:pl-40">
         <div className="flex h-screen flex-col items-start justify-center">
           <p className="sm pb-14 font-family-hero text-4xl font-bold sm:text-5xl">
@@ -85,7 +88,11 @@ export default function HeroSection() {
       </div>
       <div className="flex h-full flex-col items-end justify-between lg:items-start xl:pr-10 2xl:pr-25">
         <NavBar />
-        <img src={myPhoto} alt="Ahmed Mamdoh Photo" className="w-330" />
+        <img
+          src={myPhoto}
+          alt="Ahmed Mamdoh Photo"
+          className="w-330 lg:w-150"
+        />
       </div>
     </div>
   );
