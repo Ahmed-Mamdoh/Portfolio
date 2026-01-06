@@ -5,6 +5,7 @@ import githubWhite from "../assets/Github-White.svg";
 import linkedinWhite from "../assets/LinkedIn-White.svg";
 import NavBar from "./NavBar";
 import { useEffect, useState } from "react";
+import SplitText from "./SplitText";
 
 export default function HeroSection() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
@@ -59,12 +60,32 @@ export default function HeroSection() {
     >
       <div className="flex w-full justify-between pl-10 lg:pl-15 2xl:pl-40">
         <div className="flex h-screen flex-col items-start justify-center">
-          <p className="sm pb-14 font-family-hero text-4xl font-bold sm:text-5xl">
-            Hi,I am
-          </p>
-          <h1 className="font-family-hero text-3xl font-bold md:text-4xl lg:text-5xl xl:text-6xl">
-            Ahmed Mamdoh
-          </h1>
+          <SplitText
+            text="Hi, I am"
+            className="pb-14 font-family-hero text-4xl font-bold sm:text-5xl"
+            delay={100}
+            duration={1}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+          />
+          <SplitText
+            text="Ahmed Mamdoh"
+            className="font-family-hero text-3xl font-bold md:text-4xl lg:text-5xl xl:text-6xl"
+            delay={150}
+            duration={1}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+          />
           <p className="pb-32 font-family-hero text-xl font-extrabold text-[#909090] md:text-2xl">
             Front-End Developer
           </p>
