@@ -6,6 +6,7 @@ import linkedinWhite from "../assets/LinkedIn-White.svg";
 import NavBar from "./NavBar";
 import { useEffect, useState } from "react";
 import SplitText from "./SplitText";
+import { motion } from "motion/react";
 
 export default function HeroSection() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
@@ -109,11 +110,18 @@ export default function HeroSection() {
       </div>
       <div className="flex h-full flex-col items-end justify-between lg:items-start xl:pr-10 2xl:pr-25">
         <NavBar />
-        <img
+        <motion.img
           src={myPhoto}
           fetchPriority="high"
           alt="Ahmed Mamdoh Photo"
           className="w-330 lg:w-150"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            ease: "easeOut",
+            delay: 0.3,
+          }}
         />
       </div>
     </div>
