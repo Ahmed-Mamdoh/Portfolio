@@ -3,10 +3,10 @@ import github from "../assets/Github.png";
 import linkedin from "../assets/LinkedIn.png";
 import githubWhite from "../assets/Github-White.svg";
 import linkedinWhite from "../assets/LinkedIn-White.svg";
-import NavBar from "./NavBar";
 import { useEffect, useState } from "react";
 import SplitText from "./SplitText";
 import { motion } from "motion/react";
+import NavBar from "./NavBar";
 
 export default function HeroSection() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 768);
