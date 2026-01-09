@@ -1,4 +1,5 @@
 import github from "../assets/Github-White.png";
+import { motion } from "motion/react";
 type PortfolioProjectProps = {
   src: string[];
   href: string;
@@ -62,6 +63,24 @@ export default function PortfolioProject({
           </a>
         </div>
       </div>
+      <motion.div
+        className="absolute top-0 left-0 z-20 h-full w-full bg-black"
+        variants={{
+          hidden: {
+            left: 0,
+          },
+          visible: {
+            left: "100%",
+          },
+        }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{
+          duration: 0.7,
+          ease: "easeInOut",
+        }}
+        viewport={{ once: true }}
+      ></motion.div>
     </div>
   );
 }
