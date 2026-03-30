@@ -50,18 +50,18 @@ export default function AboutMeSection() {
             variants={itemVariants}
           >
             Hi, I'm a Frontend Developer who loves crafting responsive and
-            engaging web experiences with React.js. My focus is on creating
-            smooth, scalable applications that put the user first.
+            engaging web experiences with React.js and Next.js. My focus is on
+            creating smooth, scalable applications that put the user first.
           </motion.p>
 
           <motion.p
             className="mx-auto max-w-3/4 font-family-tertiary leading-6 font-light text-black lg:w-1/2"
             variants={itemVariants}
           >
-            I work with tools like React Query, React Hook Form, and Tailwind
-            CSS, and I'm experienced in integrating REST APIs and managing state
-            efficiently. From design to deployment, I'm all about clean code,
-            thoughtful architecture, and great teamwork.
+            I work with tools like React Query, React Hook Form, Auth.js, and
+            Tailwind CSS, and I'm experienced in integrating REST APIs and
+            managing state efficiently. From design to deployment, I'm all about
+            clean code, thoughtful architecture, and great teamwork.
           </motion.p>
         </motion.div>
 

@@ -18,6 +18,8 @@ import reactRouterIcon from "../assets/reactRouter.png";
 import githubIcon from "../assets/githubIcon.png";
 import egyptIcon from "../assets/egypt.png";
 import englishIcon from "../assets/english.png";
+import nextjsIcon from "../assets/nextjs-icon.webp";
+import authJsIcon from "../assets/authJs.png";
 
 export default function SkillsSection() {
   return (
@@ -33,10 +35,12 @@ export default function SkillsSection() {
             <Skill skillIcon={typescriptIcon} skillName="TypeScript" />
 
             <Skill skillIcon={reactIcon} skillName="React.js" />
+            <Skill skillIcon={nextjsIcon} skillName="Next.js" />
             <Skill skillIcon={reactRouterIcon} skillName="React Router" />
             <Skill skillIcon={reactQueryIcon} skillName="React Query" />
             <Skill skillIcon={reactHookFormIcon} skillName="React Form" />
             <Skill skillIcon={reduxIcon} skillName="Redux" />
+            <Skill skillIcon={authJsIcon} skillName="Auth.js" />
 
             <Skill skillIcon={tailwindIcon} skillName="Tailwind" />
 
