@@ -1,23 +1,18 @@
 import SectionHeader from "./SectionHeader";
 import portfolioBG from "../assets/portfolioBG.jpg";
-import gameChanger from "../assets/game-changer.webp";
+import gameChanger1 from "../assets/game-changer-1.webp";
 import gameChanger2 from "../assets/game-changer-2.webp";
 import gameChanger3 from "../assets/game-changer-3.webp";
 import gameChanger4 from "../assets/game-changer-4.webp";
-import foodDash1 from "../assets/food-dash-1.webp";
-import foodDash2 from "../assets/food-dash-2.webp";
-import foodDash3 from "../assets/food-dash-3.webp";
-import foodDash4 from "../assets/food-dash-4.webp";
-import omnifood1 from "../assets/omni-food-1.webp";
-import omnifood2 from "../assets/omni-food-2.webp";
-import omnifood3 from "../assets/omni-food-3.webp";
-import theWildOasis1 from "../assets/the-wild-oasis-1.webp";
+import theWildOasis from "../assets/the-wild-oasis-1.webp";
 import theWildOasis2 from "../assets/the-wild-oasis-2.webp";
 import theWildOasis3 from "../assets/the-wild-oasis-3.webp";
+import theWildOasis4 from "../assets/the-wild-oasis-4.webp";
+
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import js from "../assets/js.png";
-// import typescript from "../assets/typescript.png";
+import next from "../assets/nextjs-icon.webp";
 import react from "../assets/react.png";
 // import redux from "../assets/redux.png";
 import vite from "../assets/vite.png";
@@ -47,7 +42,7 @@ export default function PortfolioSection() {
         {/* Row 1 */}
         <PortfolioProject
           href="https://game-changer-gg.vercel.app/"
-          src={[gameChanger, gameChanger2, gameChanger3, gameChanger4]}
+          src={[gameChanger4, gameChanger1, gameChanger2, gameChanger3]}
           technologies={[
             html,
             css,
@@ -61,43 +56,19 @@ export default function PortfolioSection() {
             vite,
           ]}
           projectName="Game Changer"
-          projectDescription="A React-based PC game discovery web app powered by the IGDB API and GamePower API."
+          projectDescription="A game discovery platform featuring personalized tracking, IGDB integration, and an AI-powered chatbot for smarter recommendations."
           githubHref="https://github.com/Ahmed-Mamdoh/Game-Changer"
         />
+
         <PortfolioProject
-          href="https://food-dash-nine.vercel.app/"
-          src={[foodDash1, foodDash2, foodDash3, foodDash4]}
-          projectName="Food Dash"
-          projectDescription="An E-commerce food website for browsing, ordering, and managing food items online."
-          technologies={[html, css, js, react, tailwindcss, reactRouter, vite]}
-          githubHref="https://github.com/Ahmed-Mamdoh/FoodDash"
-        />
-        <PortfolioProject
-          href="https://omnifood-mamdoh.netlify.app/"
-          src={[omnifood1, omnifood2, omnifood3]}
-          projectName="Omnifood"
-          projectDescription="A modern food delivery website (Omnifood) built using HTML, CSS, and JavaScript"
-          technologies={[html, css, js]}
-          githubHref="https://github.com/Ahmed-Mamdoh/omnifood-landing-page"
-        />
-        <PortfolioProject
-          href="https://the-wild-oasis-beta-liard.vercel.app/"
-          src={[theWildOasis1, theWildOasis2, theWildOasis3]}
+          href="https://the-wild-oasis-website-demo-drab.vercel.app/"
+          src={[theWildOasis, theWildOasis2, theWildOasis3, theWildOasis4]}
+          technologies={[html, css, js, react, next, tailwindcss, supabase]}
           projectName="The Wild Oasis"
-          projectDescription="Hotel management dashboard with bookings, guests, and Supabase integration."
-          technologies={[
-            html,
-            css,
-            js,
-            react,
-            tailwindcss,
-            reactRouter,
-            reactQuery,
-            reactHookForm,
-            supabase,
-            vite,
-          ]}
-          githubHref="https://github.com/Ahmed-Mamdoh/the-wild-oasis"
+          projectDescription="A premium full-stack cabin booking platform built with Next.js and Supabase,
+          featuring secure Google OAuth, real-time availability tracking,
+          and a guest dashboard for managing reservations."
+          githubHref="https://github.com/Ahmed-Mamdoh/the-wild-oasis-website"
         />
       </div>
       <div className="flex items-center justify-center">

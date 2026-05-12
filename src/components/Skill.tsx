@@ -14,7 +14,7 @@ export default function Skill({ skillIcon, skillName, className }: SkillProps) {
   return (
     <motion.div
       ref={ref}
-      className="flex w-36 flex-col items-center gap-y-4 md:w-44"
+      className="flex w-28 flex-col items-center gap-y-3 md:w-32"
       initial={{
         rotateX: 90,
         scale: 0.3,
@@ -50,12 +50,16 @@ export default function Skill({ skillIcon, skillName, className }: SkillProps) {
         transitionDuration={1100}
         playOnce={false}
       >
-        <div className="flex h-24 w-24 items-end justify-center">
-          <img src={skillIcon} alt="" className={`w-24 ${className}`} />
+        <div className="flex h-16 w-16 items-center justify-center">
+          <img
+            src={skillIcon}
+            alt=""
+            className={`w-12 object-contain md:w-16 ${className || ""}`}
+          />
         </div>
       </GlareHover>
       <motion.p
-        className="font-family-secondary text-lg md:text-2xl"
+        className="text-center font-family-secondary text-base md:text-lg"
         initial={{ opacity: 0.3 }}
         animate={{ opacity: isInView ? 1 : 0.3 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}

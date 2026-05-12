@@ -25,10 +25,10 @@ export default function SkillsSection() {
   return (
     <div className="w-full">
       <SectionHeader sectionName="Skills" id="skills" />
-      <div className="mx-auto flex flex-col gap-y-24 px-12 xl:w-8/12">
+      <div className="mx-auto flex flex-col gap-y-24 px-12 xl:w-7/12">
         <div className="flex flex-col gap-y-12">
           <p className="font-family-secondary text-3xl font-bold">USING NOW:</p>
-          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-16 md:gap-x-10">
+          <div className="flex flex-wrap items-center justify-between gap-y-14">
             <Skill skillIcon={htmlIcon} skillName="HTML" />
             <Skill skillIcon={cssIcon} skillName="CSS" />
             <Skill skillIcon={jsIcon} skillName="JavaScript" />
