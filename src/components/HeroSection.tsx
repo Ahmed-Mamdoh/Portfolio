@@ -23,7 +23,10 @@ export default function HeroSection() {
 
   if (isSmallScreen)
     return (
-      <div id="hero" className="h-dvh overflow-hidden bg-black">
+      <div
+        id="hero"
+        className="h-dvh overflow-hidden bg-linear-125 from-primary from-50% to-black to-50%"
+      >
         <div className="relative flex h-full w-full items-end justify-end">
           <img
             fetchPriority="high"
@@ -46,8 +49,20 @@ export default function HeroSection() {
               </p>
             </div>
             <div className="flex flex-col items-center gap-y-7">
-              <img src={githubWhite} className="w-9 sm:w-12" alt="" />
-              <img src={linkedinWhite} className="w-9 sm:w-12" alt="" />
+              <a
+                href="https://github.com/Ahmed-Mamdoh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={githubWhite} className="w-9 sm:w-12" alt="" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ahmed-mamdoh-salem"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={linkedinWhite} className="w-9 sm:w-12" alt="" />
+              </a>
             </div>
           </div>
         </div>
@@ -99,7 +114,7 @@ export default function HeroSection() {
               <img src={github} alt="Github" />
             </a>
             <a
-              href="https://www.linkedin.com/in/eng-ahmed-mamdoh"
+              href="https://www.linkedin.com/in/ahmed-mamdoh-salem"
               target="_blank"
               className="rounded-sm bg-[#C4C4C4] p-2.5 drop-shadow-md drop-shadow-black/50 transition-all duration-300 ease-in-out hover:scale-110"
             >

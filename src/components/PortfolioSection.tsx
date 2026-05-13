@@ -21,6 +21,7 @@ import reactQuery from "../assets/reactQuery.png";
 import reactRouter from "../assets/reactRouter.png";
 import reactHookForm from "../assets/reactHookForm.png";
 import tailwindcss from "../assets/tailwind.png";
+import authJs from "../assets/authJs.png";
 
 import PortfolioProject from "./PortfolioProject";
 export default function PortfolioSection() {
@@ -37,7 +38,6 @@ export default function PortfolioSection() {
           pb="107"
         />
       </div>
-
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {/* Row 1 */}
         <PortfolioProject
@@ -63,7 +63,16 @@ export default function PortfolioSection() {
         <PortfolioProject
           href="https://the-wild-oasis-website-demo-drab.vercel.app/"
           src={[theWildOasis, theWildOasis2, theWildOasis3, theWildOasis4]}
-          technologies={[html, css, js, react, next, tailwindcss, supabase]}
+          technologies={[
+            html,
+            css,
+            js,
+            react,
+            next,
+            authJs,
+            tailwindcss,
+            supabase,
+          ]}
           projectName="The Wild Oasis"
           projectDescription="A premium full-stack cabin booking platform built with Next.js and Supabase,
           featuring secure Google OAuth, real-time availability tracking,

@@ -64,7 +64,7 @@ export default function PortfolioProject({
         </div>
       </div>
       <motion.div
-        className="absolute top-0 left-0 z-20 h-full w-full bg-black"
+        className="absolute top-0 left-0 z-20 h-full w-full bg-primary"
         variants={{
           hidden: {
             left: 0,
